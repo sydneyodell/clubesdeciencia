@@ -16,7 +16,7 @@ colorMode(HSB);
 int i=0;
 
 void draw() {
-background(255);
+background(44444);
 
 for (int j=0; j<array.length; j++) {
     if (array[i]>array[j]) {
@@ -31,8 +31,8 @@ for (int j=0; j<array.length; j++) {
     
     //Get color to go with values
     float c = map(array[j], 240, maxVal, 200, 70);
-    stroke(c, 80, 250);
-    strokeWeight(20);
+    stroke(c, 100, 250);
+    strokeWeight(50);
     
     //Draw a line
     line(xStart, 25+lineSpace*j, xStart+5*array[j], 25+lineSpace*j);
